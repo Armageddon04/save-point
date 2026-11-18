@@ -26,7 +26,7 @@ Les polices ne sont pas vendues seules et ne sont pas présentées comme faisant
 | Rajdhani | Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com) | OFL 1.1 | non |
 | Rubik Dirt | Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered) | OFL 1.1 | non |
 | Rye | Copyright (c) 2011 by Sorkin Type Co (www.sorkintype.com) | OFL 1.1 | oui : « Rye » |
-| Special Elite | Apache License, Version 2.0, January 2004 (http://www.apache.org/licenses/) : aucune ligne de copyright sur Google Fonts | Apache 2.0 | non |
+| Special Elite | Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic (AOETI). Google Fonts indique : Apache License, Version 2.0, January 2004 (http://www.apache.org/licenses/) | Apache 2.0 | non |
 | Uncial Antiqua | Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com) | OFL 1.1 | oui : « Uncial Antiqua » |
 | VT323 | Copyright 2011, The VT323 Project Authors (peter.hull@oikoi.com) | OFL 1.1 | non |
 | Yuji Syuku | Copyright 2021 The Yuji Project Authors (https://github.com/Kinutafontfactory/Yuji) | OFL 1.1 | non |
