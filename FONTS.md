@@ -1,9 +1,41 @@
 # Polices intégrées
 
-Les polices viennent de Google Fonts et sont embarquées dans le fichier HTML.
-Licence : SIL Open Font License 1.1 (https://openfontlicense.org), sauf Special Elite (Apache License 2.0).
-À vérifier police par police sur https://fonts.google.com avant publication.
+Save Point embarque 22 polices de Google Fonts, sous forme de sous-ensembles latins (format WOFF). Les noms et les mentions de copyright d'origine sont conservés dans chaque police.
 
-Alegreya, Anton, Archivo, Archivo Black, Baloo 2, Cormorant Garamond, Exo 2, Fraunces, Josefin Sans,
-Londrina Solid, Nunito, Orbitron, Patrick Hand, Press Start 2P, Rajdhani, Rubik Dirt, Rye, Special Elite,
-Uncial Antiqua, VT323, Yuji Syuku, Zen Maru Gothic.
+- **SIL Open Font License 1.1** : texte complet dans `OFL.txt`. Le copyright propre à chaque police est dans le tableau ci-dessous.
+- **Apache License 2.0** (Special Elite seulement) : texte complet dans `LICENSE-2.0.txt`.
+
+Les polices ne sont pas vendues seules et ne sont pas présentées comme faisant partie d'une autre licence. Les copyrights restent à leurs auteurs.
+
+| Police | Copyright | Licence | Nom réservé (Reserved Font Name) |
+| --- | --- | --- | --- |
+| Alegreya | Copyright 2011 The Alegreya Project Authors | OFL 1.1 | non |
+| Anton | Copyright 2020 The Anton Project Authors | OFL 1.1 | non |
+| Archivo | Copyright 2020 The Archivo Project Authors | OFL 1.1 | non |
+| Archivo Black | Copyright 2017 The Archivo Black Project Authors | OFL 1.1 | non |
+| Baloo 2 | Copyright 2019 The Baloo 2 Project Authors | OFL 1.1 | non |
+| Cormorant Garamond | Copyright 2015 The Cormorant Project Authors | OFL 1.1 | non |
+| Exo 2 | Copyright 2013 The Exo 2 Project Authors | OFL 1.1 | non |
+| Fraunces | Copyright 2018 The Fraunces Project Authors | OFL 1.1 | non |
+| Josefin Sans | Copyright 2010 The Josefin Sans Project Authors | OFL 1.1 | oui (selon les métadonnées de la police) |
+| Londrina Solid | Copyright 2011 The Londrina Solid Authors | OFL 1.1 | oui (selon les métadonnées de la police) |
+| Nunito | Copyright 2014 The Nunito Project Authors | OFL 1.1 | non |
+| Orbitron | Copyright 2018 The Orbitron Project Authors | OFL 1.1 | oui (selon les métadonnées de la police) |
+| Patrick Hand | Copyright (c) 2010-2012 Patrick Wagesreiter (mail@patrickwagesreiter.at) | OFL 1.1 | non |
+| Press Start 2P | Copyright 2012 The Press Start 2P Project Authors (cody@zone38.net) | OFL 1.1 | oui : « Press Start 2P » |
+| Rajdhani | Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com) | OFL 1.1 | non |
+| Rubik Dirt | Copyright 2020 The Rubik Filtered Project Authors | OFL 1.1 | non |
+| Rye | Copyright (c) 2011 by Sorkin Type Co (www.sorkintype.com) | OFL 1.1 | oui : « Rye » |
+| Special Elite | Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic (AOETI) | Apache 2.0 | non |
+| Uncial Antiqua | Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com) | OFL 1.1 | oui : « Uncial Antiqua » |
+| VT323 | Copyright 2011, The VT323 Project Authors (peter.hull@oikoi.com) | OFL 1.1 | non |
+| Yuji Syuku | Copyright 2021 The Yuji Project Authors | OFL 1.1 | non |
+| Zen Maru Gothic | Copyright 2021 The Zen Maru Gothic Project Authors | OFL 1.1 | non |
+
+## Noms réservés
+
+Six polices déclarent un nom réservé. Leurs fichiers sont des sous-ensembles latins qui portent encore ce nom. Décision du 18.11.2026 : les polices sont gardées telles quelles, dans le cadre d'un projet personnel et non commercial (voir `README.md`). Pour toute nouvelle police, préférer une police sans nom réservé.
+
+## Ajouter une police
+
+Avant d'ajouter une police : vérifier sa licence et son copyright sur fonts.google.com, ajouter une ligne au tableau, et vérifier qu'aucun nom réservé n'est déclaré (ou le noter ici).
