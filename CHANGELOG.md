@@ -1,5 +1,11 @@
 # Journal des modifications
 
+## 2026.11.19
+- DLC et démos pour les jeux solo : deux cases dans la fiche (exclusives). Un DLC se rattache à un jeu solo de base (nom à saisir, rattachement par identifiant) et s'affiche sous lui, avec un bloc « jeu de base, DLC, total ».
+- DLC et démos comptent dans les totaux et les sessions des bilans, mais sont exclus des moyennes par jeu, des classements (plus long, plus court, plus joué), des jeux finis, des distances et de la complétion moyenne.
+- Un DLC garde sa propre estimation HowLongToBeat. DLC et démos n'entrent pas dans le calibrage des prévisions.
+- Suppression du jeu de base : ses DLC redeviennent des jeux normaux.
+
 ## 2026.11.17.3
 - Styles Allons-y !, Dinosaures, High noon et Yggdrasil : l'encadré passe derrière le contenu et n'a plus de bord supérieur, donc il ne cache plus rien au défilement.
 
