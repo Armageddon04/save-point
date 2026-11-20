@@ -1,5 +1,9 @@
 # Journal des modifications
 
+## 2026.11.20
+- Nouveau style « Les quatre éléments » : chaque page a son élément et sa couleur (Chrono = terre, Combat = feu, Bilan = air, Plus = eau), avec bannière, décor et sceau en kanji (土 火 風 水).
+- Deux nouvelles polices : Zen Antique (Chrono, Combat) et Shippori Mincho (Bilan, Plus), pour les titres et le texte de ce style.
+
 ## 2026.11.19
 - DLC et démos pour les jeux solo : deux cases dans la fiche (exclusives). Un DLC se rattache à un jeu solo de base (nom à saisir, rattachement par identifiant) et s'affiche sous lui, avec un bloc « jeu de base, DLC, total ».
 - DLC et démos comptent dans les totaux et les sessions des bilans, mais sont exclus des moyennes par jeu, des classements (plus long, plus court, plus joué), des jeux finis, des distances et de la complétion moyenne.

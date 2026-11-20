@@ -1,6 +1,6 @@
 # Polices intégrées
 
-Save Point embarque 22 polices de Google Fonts, sous forme de sous-ensembles latins (format WOFF). Les noms et les mentions de copyright d'origine sont conservés dans chaque police.
+Save Point embarque 24 polices de Google Fonts, sous forme de sous-ensembles latins (format WOFF). Les noms et les mentions de copyright d'origine sont conservés dans chaque police.
 
 - **SIL Open Font License 1.1** : texte complet dans `OFL.txt`. Le copyright propre à chaque police est dans le tableau ci-dessous.
 - **Apache License 2.0** (Special Elite seulement) : texte complet dans `LICENSE-2.0.txt`.
@@ -26,10 +26,12 @@ Les polices ne sont pas vendues seules et ne sont pas présentées comme faisant
 | Rajdhani | Copyright (c) 2014, Indian Type Foundry (info@indiantypefoundry.com) | OFL 1.1 | non |
 | Rubik Dirt | Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered) | OFL 1.1 | non |
 | Rye | Copyright (c) 2011 by Sorkin Type Co (www.sorkintype.com) | OFL 1.1 | oui : « Rye » |
+| Shippori Mincho | Copyright 2021 The Shippori Mincho Project Authors (https://github.com/fontdasu/ShipporiMincho) | OFL 1.1 | non |
 | Special Elite | Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic (AOETI). Google Fonts indique : Apache License, Version 2.0, January 2004 (http://www.apache.org/licenses/) | Apache 2.0 | non |
 | Uncial Antiqua | Copyright (c) 2011 by Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com) | OFL 1.1 | oui : « Uncial Antiqua » |
 | VT323 | Copyright 2011, The VT323 Project Authors (peter.hull@oikoi.com) | OFL 1.1 | non |
 | Yuji Syuku | Copyright 2021 The Yuji Project Authors (https://github.com/Kinutafontfactory/Yuji) | OFL 1.1 | non |
+| Zen Antique | Copyright 2021 The Zen Antique Project Authors (https://github.com/googlefonts/zen-antique) | OFL 1.1 | non |
 | Zen Maru Gothic | Copyright 2021 The Zen Maru Gothic Project Authors (https://github.com/googlefonts/zen-marugothic) | OFL 1.1 | non |
 
 ## Noms réservés
