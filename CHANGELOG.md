@@ -1,5 +1,12 @@
 # Journal des modifications
 
+## 2026.11.22
+- Sauvegarde par année : Plus, Sauvegarde et restauration, section « Années ». Chaque année s'enregistre dans son fichier `suivi-jeux-annee-AAAA.json` (sessions, parties, jeux concernés, partenaires, historiques mensuels).
+- Chargement d'une année depuis son fichier, avec aperçu : une année déchargée est rechargée, une année présente reçoit seulement les sessions manquantes (rien n'est écrasé ni dupliqué).
+- Décharger une année pour alléger l'app : possible seulement si son fichier est enregistré et à jour, jamais pour l'année en cours. L'app garde les totaux par jeu, donc les prévisions ne changent pas.
+- Restauration d'une sauvegarde totale : cases à cocher pour ne charger que certaines années.
+- Format de sauvegarde passé à la version 4 (une app plus ancienne refuse ces fichiers).
+
 ## 2026.11.20
 - Nouveau style « Les quatre éléments » : chaque page a son élément et sa couleur (Chrono = terre, Combat = feu, Bilan = air, Plus = eau), avec bannière, décor et sceau en kanji (土 火 風 水).
 - Deux nouvelles polices : Zen Antique (Chrono, Combat) et Shippori Mincho (Bilan, Plus), pour les titres et le texte de ce style.
