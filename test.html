@@ -1085,7 +1085,7 @@ function vSave(){const on=S.abk!==false;return `<h4 class='ph' style='margin-top
 let ybmsg='',ypend=[],fpSel={};
 const yrOk=y=>/^\d{4}$/.test(y);
 function yrCnt(){const m={},g=y=>m[y]=m[y]||{s:0,min:0,m:0};S.sessions.forEach(s=>{const o=g(s.date.slice(0,4));o.s++;o.min+=s.min||0});S.matches.forEach(x=>{g(x.date.slice(0,4)).m++});return m}
-function yrAll(){const c=yrCnt(),g=y=>c[y]=c[y]||{s:0,min:0,m:0};Object.keys(S.ay||{}).forEach(g);S.games.forEach(x=>Object.keys(x.hy||{}).forEach(g));['mh','mhm','mhc'].forEach(k=>Object.keys(S[k]||{}).forEach(m=>g(m.slice(0,4))));Object.keys(c).forEach(y=>{if(!yrOk(y))delete c[y]});return c}
+function yrAll(){const c=yrCnt(),g=y=>c[y]=c[y]||{s:0,min:0,m:0};Object.keys(S.ay||{}).forEach(g);S.games.forEach(x=>{Object.keys(x.hy||{}).forEach(g);if(x.hist){const y=gy(x);if(y)g(String(y))}});['mh','mhm','mhc'].forEach(k=>Object.keys(S[k]||{}).forEach(m=>g(m.slice(0,4))));Object.keys(c).forEach(y=>{if(!yrOk(y))delete c[y]});return c}
 function fpYears(d){const s=new Set();(d.sessions||[]).forEach(x=>s.add(String(x.date).slice(0,4)));(d.matches||[]).forEach(x=>s.add(String(x.date).slice(0,4)));return [...s].filter(yrOk).sort().reverse()}
 function fpYrHtml(){const ys=fpYears(fpend);if(!ys.length)return '';const c={};(fpend.sessions||[]).forEach(x=>{const o=c[String(x.date).slice(0,4)]=c[String(x.date).slice(0,4)]||{s:0,min:0};o.s++;o.min+=x.min||0});
 const off=ys.filter(y=>fpSel[y]===false);return `<b>Années à charger</b><div class='mu'>Décoche une année pour ne pas la charger : ses sessions restent dans ce fichier, et l’app garde seulement les totaux par jeu (utiles aux prévisions).</div>`+ys.map(y=>`<label class='kv' style='align-items:center'><span><input type='checkbox' ${fpSel[y]===false?'':'checked'} onchange="fpSel['${y}']=this.checked;render()"> <b>${y}</b></span><span class='mu'>${(c[y]||{s:0}).s} session${((c[y]||{s:0}).s>1)?'s':''} · ${fm((c[y]||{min:0}).min)}</span></label>`).join('')+(off.length?`<div class='mu'><b>Années non chargées : ${off.join(', ')}</b></div>`:'')}
@@ -1096,7 +1096,7 @@ D.games.forEach(g=>{const o=by[g.id];if(o){g.ar=g.ar||{};const a=g.ar[y]||{n:0,m
 D.ay=D.ay||{};const a0=D.ay[y]||{s:0,min:0,m:0};D.ay[y]={s:a0.s+ss.length,min:a0.min+ss.reduce((a,s)=>a+(s.min||0),0),m:a0.m+mm.length};
 D.sessions=D.sessions.filter(s=>!String(s.date).startsWith(P));D.matches=(D.matches||[]).filter(m=>!String(m.date).startsWith(P));if(D.yx)delete D.yx[y]}
 function yrBuild(y){const P=y+'-',ss=S.sessions.filter(s=>s.date.startsWith(P)),mm=S.matches.filter(m=>m.date.startsWith(P)),ids=new Set([...ss.map(s=>s.gid),...mm.map(m=>m.gid)]);
-S.games.forEach(g=>{if((g.hy&&g.hy[y])||(g.ph&&g.ph[y])||(g.chars||[]).some(c=>c.hy&&c.hy[y]))ids.add(g.id)});
+S.games.forEach(g=>{if((g.hy&&g.hy[y])||(g.hist&&String(gy(g))===y)||(g.ph&&g.ph[y])||(g.chars||[]).some(c=>c.hy&&c.hy[y]))ids.add(g.id)});
 [...ids].forEach(id=>{const g=S.games.find(x=>x.id===id);if(!g)return;[g.dlc,g.of].filter(Boolean).forEach(k=>S.games.filter(x=>ck(x)===k&&!x.dlc&&!x.of).forEach(b=>ids.add(b.id)))});
 const one=(o,y)=>o&&o[y]?{[y]:o[y]}:null;
 const jeux=[...ids].map(id=>S.games.find(x=>x.id===id)).filter(Boolean).map(g=>{const c=JSON.parse(JSON.stringify(g));delete c.ar;const h=one(c.hy,y),q=one(c.ph,y);if(h)c.hy=h;else delete c.hy;if(q)c.ph=q;else delete c.ph;(c.chars||[]).forEach(r=>{const z=one(r.hy,y);if(z)r.hy=z;else delete r.hy});return c});
