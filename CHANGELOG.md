@@ -1,5 +1,14 @@
 # Journal des modifications
 
+## 2026.11.24
+- Nouvelle page Wishlist (Plus > Wishlist) : jeux que tu veux faire, avec nom, console, durées HowLongToBeat, tags, date de sortie et note.
+- Date de sortie complète (jj.mm.aaaa), partielle (mm.aaaa ou aaaa) ou « À annoncer ». Le jeu passe tout seul à « Déjà disponible » à la date indiquée (à la fin du mois ou de l'année pour une date partielle).
+- Durée personnalisée pour chaque jeu (heures et jours), calculée avec le même modèle que « Simuler un jeu ».
+- Tri par date de sortie, nom, console, durée pour toi, tag ou date d'ajout ; filtres par état, console et tags (tous ces tags ou au moins un) ; recherche.
+- Bouton « Commencer ce jeu » : crée le jeu dans Solo avec console, durées et prévision initiale, puis le retire de la wishlist.
+- La wishlist est incluse dans la sauvegarde totale. Format de sauvegarde passé à la version 5.
+- Correctif : le cache du modèle de prévision se met maintenant à jour aussi quand tu modifies un jeu ou une durée sans changer le nombre de jeux ni de sessions.
+
 ## 2026.11.22
 - Sauvegarde par année : Plus, Sauvegarde et restauration, section « Années ». Chaque année s'enregistre dans son fichier `suivi-jeux-annee-AAAA.json` (sessions, parties, jeux concernés, partenaires, historiques mensuels).
 - Chargement d'une année depuis son fichier, avec aperçu : une année déchargée est rechargée, une année présente reçoit seulement les sessions manquantes (rien n'est écrasé ni dupliqué).
